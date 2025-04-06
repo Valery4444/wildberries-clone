@@ -1,0 +1,153 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 215px;
+  width: 100%;
+  min-height: 418px;
+  max-height: 418px;
+  height: 100%;
+
+  .toCart {
+    width: 100%;
+    border: none;
+    background-color: #a73afd;
+    padding: 6px;
+    color: white;
+    border-radius: 8px;
+    font-family: "Exo 2", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .toCart:hover {
+    background-color: #8a2ed2;
+    color: #d6d6d6;
+  }
+
+  .toCart .delivery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .toCart .delivery::before {
+    content: "";
+    background-image: url("src/assets/cart.svg");
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    background-position: 50%;
+    background-size: contain;
+  }
+
+  .product-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    min-height: 418px;
+    max-height: 418px;
+    height: 100%;
+
+    .product-main--description {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      width: 100%;
+    }
+
+    .preview {
+      max-height: 286px;
+      max-width: 215px;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+
+    .preview-wrapper {
+      display: flex;
+      height: 100%;
+      margin: auto;
+    }
+
+    .product-title {
+
+      p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        font-family: "Exo 2", sans-serif;
+
+        .name {
+          margin-left: 4px;
+          color: rgba(0,0,0,.6);
+        }
+      }
+    }
+
+    .product-reviews {
+      display: flex;
+      flex-direction: row;
+      gap: 4px;
+      font-family: "Exo 2", sans-serif;
+
+      .star {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .star::before {
+        content: "";
+        background-image: url("src/assets/star.svg");
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 12px;
+        background-position: 50%;
+        background-size: contain;
+      }
+
+      .reviews-count {
+        color: rgba(0,0,0,.6);
+      }
+
+      .reviews-count::before {
+        content: "";
+        vertical-align: middle;
+        background-color: #9d9da5;
+        border-radius: 50%;
+        width: 4px;
+        height: 4px;
+        margin: 0 4px 2px;
+        display: inline-block;
+      }
+    }
+
+    .product-price--new {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: #F44;
+      font-family: "Exo 2", sans-serif;
+      font-weight: bold;
+    }
+
+    .product-price--new::before {
+      content: "";
+      background-image: url("src/assets/discount.svg");
+      background-repeat: no-repeat;
+      width: 12px;
+      height: 12px;
+      background-size: contain;
+    }
+  }
+}

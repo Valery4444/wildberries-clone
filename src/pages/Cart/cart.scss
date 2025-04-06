@@ -1,0 +1,237 @@
+.cart {
+  margin-top: 32px;
+}
+
+.cart-wrapper {
+  display: flex;
+  gap: 48px;
+  max-width: 1500px;
+  margin: 0 auto;
+
+  .cart-products {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 16px;
+
+    .cart-products--wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 16px;
+
+      .title {
+        font-size: 28px;
+        font-family: "Exo 2", sans-serif;
+      }
+
+      .subtitle {
+        color: rgba(0,0,0,0.6);
+        font-family: "Exo 2", sans-serif;
+      }
+
+      .cart-products-all {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+  }
+
+  .cart-result {
+    background-color: #fff;
+    max-width: 360px;
+    max-height: 278px;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+
+    .cart-result--wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding: 16px;
+
+      .cart-information {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .address {
+        font-size: 16px;
+        font-family: "Exo 2", sans-serif;
+        color: #a73afd;
+        font-weight: bold;
+      }
+
+      .products-count {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Exo 2", sans-serif;
+        color: rgba(0,0,0,.6);
+      }
+
+      .products-result {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Exo 2", sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .order {
+        width: 100%;
+        border: none;
+        background-color: #a73afd;
+        color: white;
+        padding: 16px;
+        border-radius: 12px;
+        font-family: "Exo 2", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .order:hover {
+        background-color: #8a2ed2;
+        color: #d6d6d6;
+      }
+    }
+  }
+}
+
+.cart-empty {
+  max-width: 1500px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 32px 0;
+  margin: 32px auto 0;
+}
+
+.cart-empty--wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 32px;
+
+  font-size: 16px;
+  font-family: "Exo 2", sans-serif;
+
+  img {
+    width: 72px;
+    height: 72px;
+    margin: auto;
+  }
+
+  a {
+    background-color: #a73afd;
+    max-width: 200px;
+    width: 100%;
+    color: #fff;
+    padding: 12px;
+    margin: auto;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    background-color: #8a2ed2;
+    color: #d6d6d6;
+  }
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  max-height: 128px;
+  height: 100%;
+  width: 100%;
+
+  .cart-item--price {
+    font-family: "Exo 2", sans-serif;
+    color: #FF4444;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  .cart-item--main {
+    display: flex;
+    gap: 64px;
+
+    .cart-item--product {
+      display: flex;
+      gap: 16px;
+
+      .preview {
+        border-radius: 8px;
+        max-width: 96px;
+      }
+
+      .cart-item--details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title {
+          font-family: "Exo 2", sans-serif;
+          font-size: 16px;
+        }
+
+        .delivery {
+          font-family: "Exo 2", sans-serif;
+          font-size: 16px;
+          color: rgba(0,0,0,.6);
+        }
+
+        .delete-btn {
+          width: 25px;
+          height: 25px;
+          background: none;
+          border: none;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+
+        .delete-btn:hover {
+          filter: invert(1);
+        }
+      }
+    }
+
+    .cart-item--controller {
+      .cart-item--controller--wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+
+        .qty-value {
+          font-family: "Exo 2", sans-serif;
+        }
+
+        .qty-button {
+          width: 32px;
+          height: 32px;
+          background-color: #f1f1f5;
+          border-radius: 8px;
+          border: none;
+          font-family: "Exo 2", sans-serif;
+          font-size: 24px;
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+
+        .qty-button:hover {
+          background-color: #d0d0d5;
+          color: #373737;
+        }
+      }
+    }
+  }
+}

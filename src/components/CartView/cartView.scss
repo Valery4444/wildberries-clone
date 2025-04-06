@@ -1,0 +1,101 @@
+.cart-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  .cart-view--wrapper {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    background-color: white;
+    max-width: 992px;
+    max-height: 672px;
+    width: 100%;
+    height: 100%;
+
+    .cart-view--preview--wrapper {
+      display: flex;
+      max-width: 50%;
+      width: 100%;
+      height: 100%;
+
+      .cart-view--preview {
+        border-radius: 20px 0 0 20px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .cart-view--content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 20px;
+      width: 100%;
+
+      .product-price {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: #F44;
+        font-family: "Exo 2", sans-serif;
+        font-weight: bold;
+      }
+
+      .product-title p {
+        font-family: "Exo 2", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .toCart {
+        padding: 16px;
+      }
+
+      .product-reviews {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        font-family: "Exo 2", sans-serif;
+
+        .star {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+        }
+
+        .star::before {
+          content: "";
+          background-image: url("src/assets/star.svg");
+          background-repeat: no-repeat;
+          width: 12px;
+          height: 12px;
+          background-position: 50%;
+          background-size: contain;
+        }
+
+        .reviews-count {
+          color: rgba(0,0,0,.6);
+        }
+
+        .reviews-count::before {
+          content: "";
+          vertical-align: middle;
+          background-color: #9d9da5;
+          border-radius: 50%;
+          width: 4px;
+          height: 4px;
+          margin: 0 4px 2px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

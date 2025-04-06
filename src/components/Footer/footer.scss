@@ -1,0 +1,119 @@
+footer {
+  display: flex;
+  background-color: rgba(211,212,221,.24);
+  margin-top: 64px;
+
+  .footer-wrapper {
+    display: flex;
+    gap: 128px;
+    justify-content: space-between;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 0;
+
+    .footer-social {
+
+      .qr-code {
+        border-radius: 8px;
+      }
+
+      .social-nav {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+
+        li {
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+
+            svg path {
+              transition: 0.3s;
+
+            }
+          }
+
+          .vk:hover {
+            svg path {
+              fill: #0d55c1;
+            }
+          }
+
+          .ok:hover {
+            svg path {
+              fill: #dd9323;
+            }
+          }
+
+          .tg:hover {
+            svg path {
+              fill: #2e75d2;
+            }
+          }
+
+          .yt:hover {
+            svg path {
+              fill: #e41e1e;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-information {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+
+      .copyright {
+        color: #868695;
+        font-family: "Exo 2", sans-serif;
+      }
+
+      .navs {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+
+        .navs--item {
+          .title {
+            font-family: "Exo 2", sans-serif;
+          }
+
+          .nav {
+            ul {
+              list-style: none;
+
+              li {
+                margin-top: 8px;
+
+                a {
+                  color: #868695;
+                  padding: 0;
+                  font-size: 14px;
+                  line-height: 20px;
+                  text-decoration: none;
+                  font-family: "Exo 2", sans-serif;
+                  transition: color 0.3s;
+                  font-weight: 500;
+                }
+
+                a:hover {
+                  color: #a73afd;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

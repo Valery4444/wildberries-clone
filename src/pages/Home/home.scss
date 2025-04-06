@@ -1,0 +1,21 @@
+main {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.slider-wrapper{
+  margin: 32px 0;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+}
+
+.products-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
